@@ -10,7 +10,7 @@ const Button = React.memo(({ handleClick, label }) => {
 Button.displayName = "Button";
 
 Button.propTypes = {
-  handleClick: PropTypes.func.isRequired, // Prop validation
+  handleClick: PropTypes.func.isRequired, 
   label: PropTypes.string.isRequired,    // Prop validation
 };
 
@@ -21,7 +21,7 @@ const Call = () => {
 
   return (
     <div>
-      <h1>useCallback</h1>
+      <h1>useCallback</h1>      
       <p>Count: {count}</p>
       <Button handleClick={increment} label="Increment" />
     </div>
