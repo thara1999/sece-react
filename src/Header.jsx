@@ -5,7 +5,7 @@ import axios from "axios";
 const Header = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-
+// 2componentdidmount
   useEffect(() => {
     // Fetch products using Axios
     axios
@@ -37,5 +37,5 @@ const Header = () => {
     </div>
   );
 };
-
+//componentwillmount
 export default Header;

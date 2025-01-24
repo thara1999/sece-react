@@ -1,27 +1,22 @@
 
 //import About from './About'
 import './App.css'
-//import Call from './Call'
-//import Header from './Header'
-
-//import Menu from './Menu'
-import Home from './Context/Home'
-import Theme from './Context/Theme'
+import Auth from './Auth'
+import User from './User'
+const Authorized = Auth(User);
 function App() {
+  const user = {name:"Roshini"};
+  const isAuth=true;
   
-
   return (
     <>
-    <Home>
-     <Theme/>
-    </Home>
+  
+   < Authorized isAuth={isAuth}user={user}/>
+    
+    
    </>
 
-    // <>
-    //  {/* <Header/> */}
-    //   <About/>
-    //   <Call/>
-    // </>
+    
   )
 }
 
